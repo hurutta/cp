@@ -1,0 +1,4 @@
+<snippet>
+<content><![CDATA[sort(${1:var}.begin(),${1:var}.end());]]></content>
+<tabTrigger>sort</tabTrigger>
+</snippet>

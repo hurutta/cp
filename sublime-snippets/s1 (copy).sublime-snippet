@@ -1,0 +1,4 @@
+<snippet>
+<content><![CDATA[push_back(${1:var});]]></content>
+<tabTrigger>push_back</tabTrigger>
+</snippet>

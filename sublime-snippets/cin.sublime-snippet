@@ -1,0 +1,4 @@
+<snippet>
+<content><![CDATA[cin >> ${1:var};]]></content>
+<tabTrigger>cin</tabTrigger>
+</snippet>
