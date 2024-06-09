@@ -2,6 +2,8 @@
 using namespace std;
 #define INF 4000
 
+int tree[INF];
+
 int query(int pos)
 {
 	int sum=0;
@@ -29,3 +31,4 @@ int main()
     //ios_base::sync_with_stdio(false);
     //cin.tie(NULL);
 	
+}

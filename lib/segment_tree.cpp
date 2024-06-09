@@ -24,15 +24,26 @@ void init(int node,int b,int e)
     int mid=(b+e)/2;
     init(left,b,mid);
     init(right,mid+1,e);
-    tree[node]=tree[left]+tree[right];
+    tree[node]=min(tree[left],tree[right]);
 }
  
 long long query(int node,int b,int e,int ll,int rr)
 {
-    if(rr<b || ll>e) return 0;
+    if(rr<b || ll>e) return INT_MAX;
     if(ll<=b && e<=rr) return tree[node];
     int left=node*2;
     int right=left+1;
     int mid=(b+e)/2;
-    long long p1=query(left,b,mid,ll,rr);
-    long long p2=query(righ
+    int p1=query(left,b,mid,ll,rr);
+    int p2=query(right,mid+1,e,ll,rr);
+    return min(p1,p2);
+}
+
+int main()
+{
+    //freopen("input.txt","r",stdin);
+    //freopen("output.txt","w",stdout);
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(NULL);
+
+}
